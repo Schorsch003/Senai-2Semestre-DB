@@ -79,3 +79,5 @@ ALTER TABLE Marcas ADD QntdLojas INT
 ALTER TABLE Marcas ADD DataCriação DATE
 ALTER TABLE Camisetas ADD PodeSerLavada BIT
 ALTER TABLE Tamanhos ADD Medidas VARCHAR(15)
+
+END

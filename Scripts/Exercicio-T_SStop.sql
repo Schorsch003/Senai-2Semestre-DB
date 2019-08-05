@@ -27,5 +27,5 @@ DELETE FROM Artistas WHERE IdEstiloMusical = 4;
 
 --EXEC sp_rename 'EstilosMusicais.Estilo', 'Nome', 'COLUMN';
 
-SELECT Artistas.IdArtista ,Artistas.Nome, EstilosMusicais.Nome AS NomeEstilo FROM EstilosMusicais JOIN Artistas ON EstilosMusicais.IdEstiloMusical = Artistas.IdEstiloMusical ORDER BY EstilosMusicais.IdEstiloMusical;
+SELECT Artistas.IdArtista ,Artistas.Nome, EstilosMusicais.Nome AS NomeEstilo FROM EstilosMusicais JOIN Artistas ON EstilosMusicais.IdEstiloMusical = Artistas.IdEstiloMusical ORDER BY Artistas.IdArtista;
 SELECT * FROM Artistas ORDER BY IdArtista;
